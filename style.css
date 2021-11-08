@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+:root {
+    --Pink: rgb(255, 82, 191);
+    --Very-Pale-Cyan: hsl(193, 100%, 96%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Grayish-Blue: hsl(208, 11%, 55%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 18px;
+}
+
+
+/* Start Header Style */
+
+header {
+    background: var(--Very-Pale-Cyan) url(./img/bg-hero-desktop.svg) no-repeat;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "hd hd" "desc img";
+    padding: 3em 4em;
+    row-gap: 2em;
+}
+
+.h-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-area: hd;
+}
+
+.h-header img {
+    width: 200px;
+    height: 30px;
+}
+
+.h-header a {
+    text-decoration: none;
+    color: var(--Very-Dark-Cyan);
+    background-color: #fff;
+    font-family: "Open sans", sans-serif;
+    font-size: .9em;
+    font-weight: 700;
+    opacity: .8;
+    padding: .8em 3.2em;
+    border-radius: 30px;
+    transition: 500ms linear;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.h-header a:hover {
+    transform: scale(1.1);
+}
+
+.h-description {
+    margin-top: 2em;
+    grid-area: desc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+}
+
+.h-description h1 {
+    font-family: "poppins", sans-serif;
+    width: 79%;
+    font-size: 2.3em;
+    color: var(--Very-Dark-Cyan);
+}
+
+.h-description p {
+    font-family: "Open sans", sans-serif;
+    color: var(--Very-Dark-Cyan);
+    line-height: 1.7em;
+}
+
+.h-description a {
+    font-family: "Open sans", sans-serif;
+    width: fit-content;
+    background-color: var(--Pink);
+    color: var(--Very-Pale-Cyan);
+    text-decoration: none;
+    font-size: .9em;
+    font-weight: 700;
+    padding: 1em 3em;
+    box-shadow: rgba(255, 82, 191, 0.2) 0px 7px 29px 0px;
+    border-radius: 30px;
+    transition: 500ms linear;
+}
+
+.h-description a:hover {
+    background-color: rgba(255, 82, 191, .6);
+    transform: scale(1.1);
+}
+
+.subscribe a:hover {
+    background-color: rgba(255, 82, 191, .6);
+    transform: scale(1.1);
+}
+
+.h-img {
+    position: relative;
+    left: 10%;
+    grid-area: img;
+    width: 90%;
+    margin-top: 3em;
+}
+
+
+/* End Header Style */
+
+
+/* Start Main Style */
+
+main {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 2em;
+    padding: 8em 0em;
+}
+
+.container {
+    padding: 2em 3em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 15px;
+    width: 80vw;
+}
+
+.text {
+    padding-left: 4em;
+    width: 50%;
+}
+
+.text h2 {
+    font-family: "poppins", sans-serif;
+    color: var(--Very-Dark-Cyan);
+}
+
+.text p {
+    margin-top: 1em;
+    font-family: "Open sans", sans-serif;
+    line-height: 1.5em;
+    width: 88%;
+    color: var(--Grayish-Blue)
+}
+
+main img {
+    width: 40%;
+}
+
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    text-align: center;
+    padding: 3.5em 7em;
+    gap: 2em;
+    position: relative;
+    top: 13em;
+    background: #ffffff;
+}
+
+.subscribe h1 {
+    font-family: "poppins", sans-serif;
+    color: var(--Very-Dark-Cyan);
+    font-size: 1.5em;
+}
+
+.subscribe a {
+    font-family: "Open sans", sans-serif;
+    width: fit-content;
+    background-color: var(--Pink);
+    color: var(--Very-Pale-Cyan);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 700;
+    padding: 1.2em 4em;
+    box-shadow: rgba(255, 82, 191, 0.2) 0px 7px 29px 0px;
+    border-radius: 50px;
+    transition: 500ms linear;
+}
+
+
+/* End Main Style */
+
+
+/* Start Footer Style */
+
+footer {
+    background: var(--Very-Dark-Cyan);
+    padding: 8em 8em 5em;
+    color: #fff;
+    font-family: "Open sans", sans-serif;
+    font-size: .9em;
+}
+
+.f-icon {
+    width: 200px;
+}
+
+.content {
+    margin-top: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+.content>ul {
+    width: 33%;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 33%;
+}
+
+.contact>div {
+    display: flex;
+    align-items: flex-start;
+    gap: 1em;
+}
+
+.contact p {
+    font-size: .9em;
+    font-weight: 400;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    max-height: 150px;
+    padding-left: 5em;
+}
+
+.socials li {
+    display: flex;
+    position: relative;
+    left: 30%;
+    bottom: 3em;
+    gap: 1.5em;
+}
+
+.content ul {
+    list-style: none;
+}
+
+.content ul a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.content ul a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    font-size: .8em;
+    float: right;
+}
+
+
+/* End Footer Style */
